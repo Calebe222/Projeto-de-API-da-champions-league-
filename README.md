@@ -1,33 +1,36 @@
-🏆 Champions League API - DIO
+# 🏆 API da Liga dos Campeões - DIO
 
-Este projeto é uma API REST desenvolvida como parte do bootcamp da Digital Innovation One (DIO), com o objetivo de praticar conceitos de desenvolvimento backend, rotas, manipulação de dados em formato JSON e boas práticas de versionamento no GitHub.
+Este projeto é uma API REST desenvolvida como parte do bootcamp da **Digital Innovation One (DIO)**. O objetivo principal é a aplicação prática de conceitos fundamentais de desenvolvimento backend, como criação de rotas, manipulação de dados JSON e versionamento semântico.
 
-📌 Objetivo
+## 📌 Objetivo
 
-Fornecer informações básicas sobre os clubes participantes da UEFA Champions League, simulando uma API simples para consultas.
+Fornecer uma interface simples e funcional para consulta de informações sobre os clubes participantes da **UEFA Champions League**, simulando um ambiente real de consumo de dados.
 
-⚙️ Funcionalidades
+---
 
-Listar todos os clubes participantes da Champions League.
+## ⚙️ Funcionalidades
 
-Consultar clube por ID.
+- [x] **Listagem Geral:** Retorna todos os clubes participantes.
+- [x] **Busca por ID:** Filtra um clube específico através de seu identificador único.
+- [x] **Busca por Nome:** Permite localizar clubes através de termos de pesquisa.
+- [x] **Formatação Padrão:** Respostas entregues integralmente em formato JSON.
 
-Consultar clube por nome.
+---
 
-Retornar dados em formato JSON.
+## 🛠️ Tecnologias Utilizadas
 
+* **Node.js**: Ambiente de execução.
+* **Express**: Framework web para gerenciamento de rotas e middlewares.
+* **TypeScript**: Adição de tipagem estática para maior segurança no desenvolvimento.
+* **JavaScript (ES6+)**: Base do desenvolvimento da lógica.
 
-🛠️ Tecnologias Utilizadas
+---
 
-Node.js
+## 📊 Exemplo de Resposta
 
-Express
+`GET /clubs`
 
-Typescript 
-
-JavaScript
-
-📊 Exemplo de Resposta (GET /clubs)
+```json
 [
   {
     "id": 1,
@@ -42,15 +45,3 @@ JavaScript
     "name": "Manchester City"
   }
 ]
-
-🚀 Aprendizados
-
-Durante o desenvolvimento deste projeto foi possível praticar:
-
-Criação de APIs REST com Node.js e Express.
-
-Estruturação de dados em JSON.
-
-Versionamento de código com Git e GitHub.
-
-Boas práticas de organização de código e documentação.
